@@ -12,44 +12,44 @@
 
 <div class="container">
 
-<form class="form-horizontal">
+<form>
 
   <fieldset class="form-group">
     <legend>Pet Questionnaire</legend>
 
-    <div class="form-group">
-      <label class="col-sm-2 control-label" for="ownername">Owner</label>
+    <div class="form-group row">
+      <label class="col-sm-2 text-sm-right col-form-label" for="ownername">Owner</label>
       <div class="col-sm-10">
         <input class="form-control" type="text" id="ownername" placeholder="Your Name">
       </div>
     </div><!-- form-group -->
 
-    <div class="form-group">
-      <label class=" col-sm-2 control-label" for="owneremail">Address</label>
+    <div class="form-group row">
+      <label class="text-sm-right col-sm-2 col-form-label" for="owneremail">Address</label>
       <div class="col-sm-10">
         <input class="form-control" type="text" id="owneremail" placeholder="Address">
       </div>
     </div><!-- form-group -->
 
 
-    <div class="form-group">
-      <div class="col-sm-offset-2 col-sm-6">
-        <label class=" sr-only" for="ownercity">City</label>
+    <div class="form-group row">
+      <div class="form-group offset-sm-2 col-sm-6">
+        <label class="form-control-label sr-only" for="ownercity">City</label>
         <input class="form-control" type="text" id="ownercity" placeholder="City">
       </div><!-- form-group -->
 
-      <div class="col-sm-4">
-        <label class=" sr-only" for="ownerzip">Zip</label>
+      <div class="form-group col-sm-4">
+        <label class="form-control-label sr-only" for="ownerzip">Zip</label>
         <input class="form-control" type="text" id="ownerzip" placeholder="Zip">
       </div><!-- form-group -->
     </div><!-- form-group -->
 
-    <div class="form-group">
-      <div class="col-sm-2 control-label">
-        <label for="pettype">Pet type</label>
+    <div class="form-group row">
+      <div class="col-sm-2 text-sm-right col-form-label">
+        <label class="form-control-label" for="pettype">Pet type</label>
       </div>
       <div class="col-sm-10">
-        <select class="form-control input-lg" id="pettype">
+        <select class="form-control form-control-lg" id="pettype">
           <option>Choose</option>
           <option value="cat">Dog</option>
           <option value="cat">Cat</option>
@@ -58,8 +58,8 @@
       </div>
     </div><!-- form-group -->
 
-    <div class="form-group form-group-lg">
-      <div class="col-sm-2 control-label">
+    <div class="form-group row">
+      <div class="col-sm-2 text-sm-right col-form-label">
         <label for="reasonforvisit">Symptoms</label>
       </div>
       <div class="col-sm-10">
@@ -67,45 +67,53 @@
       </div>
     </div><!-- form-group -->
 
-    <div class="form-group">
-      <div class="col-sm-4">
+    <div class="form-group row">
+      <div class="col-sm-6 offset-sm-2">
         <label>Has your pet been spayed or neutered?</label>
       </div>
 
-      <div class="col-sm-8">
-          <label class="radio-inline">
-            <input type="radio" name="spayneut" value="yes" checked> Yes
+      <div class="col-sm-4">
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="radio" name="spayneut" value="yes" checked> Yes
           </label>
+        </div>
 
-          <label class="radio-inline">
-            <input type="radio" name="spayneut" value="no"> No
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input  class="form-check-input" type="radio" name="spayneut" value="no"> No
           </label>
+        </div>
       </div><!-- column -->
     </div><!-- form-group -->
 
-    <div class="form-group">
-      <div class="col-sm-4">
+    <div class="form-group row">
+      <div class="col-sm-10 offset-sm-2">
         <label>Has the pet had any of the following in the past 30 days</label>
-      </div>
 
-      <div class="col-sm-8">
-        <label class="checkbox-inline">
-          <input type="checkbox"> Abdominal pain
-        </label>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Abdominal pain
+          </label>
+        </div>
 
-        <label class="checkbox-inline">
-          <input type="checkbox"> Lack of appetite
-        </label>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Lack of appetite
+          </label>
+        </div>
 
-        <label class="checkbox-inline">
-          <input type="checkbox"> Weakness
-        </label>
+        <div class="form-check form-check-inline">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox"> Weakness
+          </label>
+        </div>
     </div><!-- form-group -->
 
   </fieldset><!-- form-group -->
     
-  <div class="form-group">
-    <div class="col-sm-offset-2">
+  <div class="form-group row">
+    <div class="offset-sm-2 col-sm-10">
       <button class="btn btn-primary" type="submit">Submit</button>
     </div><!-- offset col -->
   </div><!-- form-group -->
